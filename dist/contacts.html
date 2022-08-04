@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="description" content="Главная страница">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&amp;display=swap">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="inner">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner flex">
+          <div class="logo"><a class="logo__link" href="/"><img class="logo__image" src="img/logo.png" alt=""></a>
+            <p class="tagline">Буровые и свайные работы</p>
+          </div>
+          <div class="menu">
+            <ul class="menu-items flex">
+              <li class="menu__item current-menu-item"><a class="menu__link" href="/">Главная</a></li>
+              <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+              <li class="menu__item"><a class="menu__link" href="about.html">О компании</a></li>
+              <li class="menu__item"><a class="menu__link" href="projects.html">Проекты</a></li>
+              <li class="menu__item"><a class="menu__link" href="equipment.html">Техника</a></li>
+              <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="contacts"><a class="contacts__phone" href="tel:+79857600421">+7 (985) 760-04-21</a>
+            <p class="contacts__whours">с 09:00 до 18:00</p>
+          </div><a class="callback btn btn_yellow" href="#callback"><span>Заказать звонок</span></a>
+          <div class="menu-toggle"><i class="icon-toggle"><span></span><span></span><span></span></i></div>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="requisites" id="requisites">
+        <div class="container">
+          <h2 class="requisites__header">Контакты и реквизиты</h2>
+          <div class="requisites__text">
+            <p><strong>Директор:</strong> Балаян Сергей Юрьевич</p>
+            <p><strong>Полное наименование организации:</strong> Общество с ограниченной ответственностью «СпецТехноАльянс»</p>
+          </div>
+          <div class="requisites__inner flex">
+            <div class="requisites__left">
+              <p><strong>ИНН:</strong> 4027139078</p>
+              <p><strong>КПП:</strong> 402701001</p>
+              <p><strong>ОГРН:</strong> 1194027001508</p>
+              <p><strong>ОКПО:</strong> 35877892</p>
+              <p><strong>ОКОГУ:</strong> 4210014</p>
+              <p><strong>ОКФС:</strong> 16</p>
+              <p><strong>ОКОПФ:</strong> 12300</p>
+              <p><strong>ОКВЭД:</strong> 41.20</p>
+            </div>
+            <div class="requisites__right">
+              <p><strong>Банковские реквизиты:</strong></p>
+              <p><strong>Р/счет №:</strong> 40702810322240005911 <br>Калужское Отделение № 8608 ПАО Сбербанк</p>
+              <p><strong>К/счет №:</strong> 30101810100000000612</p>
+              <p><strong>БИК:</strong> 042908612</p>
+            </div>
+          </div>
+          <div class="requisites__text">
+            <p><strong>E-mail:</strong> <a href="mailto:gspsnab@mail.ru">gspsnab@mail.ru</a></p>
+            <p><strong>Номер тел./факс:</strong> +7 (910) 544-27-49</p>
+            <p><strong>Юридический и почтовый адрес:</strong> 248000, г. Калуга, ул. Достоевского, д.25, офис 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="order" id="order">
+        <div class="container">
+          <div class="order__inner flex">
+            <div class="order__left">
+              <h2 class="order__header">Задать вопрос</h2>
+              <form class="order-form flex jcsb">
+                <input type="hidden" name="act" value="question">
+                <label class="order-form__label order-form__label-name">
+                  <div class="order-form__label-text">Ваше имя</div>
+                  <input class="order-form__input" type="text" name="name" placeholder="Имя">
+                </label>
+                <label class="order-form__label order-form__label-phone">
+                  <div class="order-form__label-text">Ваш номер телефона</div>
+                  <input class="order-form__input" type="text" name="phone" placeholder="+7 (___) ___-___-__" required>
+                </label>
+                <label class="order-form__label order-form__label-comment">
+                  <div class="order-form__label-text">Ваше сообщение</div>
+                  <textarea class="order-form__textarea" name="comment" placeholder="Напишите любой вопрос и мы вам перезвоним"></textarea>
+                </label>
+                <button class="order-form__button btn btn_yellow" type="submit"><span>Отправить сообщение</span></button>
+                <label class="order-form__label order-form__label-privacy">
+                  <input type="checkbox" required>Принимаю условия обработки моих данных в соответствии с <a href="#">политикой обработки данных</a>
+                </label>
+              </form>
+            </div>
+            <div class="order__right">
+              <div class="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__top-inner flex">
+            <div class="logo"><a class="logo__link" href="/"><img class="logo__image" src="img/logo.png" alt=""></a>
+              <p class="tagline">Буровые и свайные работы</p>
+            </div>
+            <div class="menu">
+              <ul class="menu-items flex">
+                <li class="menu__item current-menu-item"><a class="menu__link" href="/">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">О компании</a></li>
+                <li class="menu__item"><a class="menu__link" href="projects.html">Проекты</a></li>
+                <li class="menu__item"><a class="menu__link" href="equipment.html">Техника</a></li>
+                <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="social"><a class="social__item fab fa-instagram" href="https://www.instagram.com/spectechnoalliance/"></a><a class="social__item fab fa-whatsapp" href="https://api.whatsapp.com/send/?phone=+7910 5442749&amp;text&amp;app_absent=0"></a>
+            </div>
+            <div class="contacts"><a class="contacts__phone" href="tel:+79857600421">+7 (985) 760-04-21</a>
+              <p class="contacts__whours">Работаем без выходных <br>с 09:00 до 18:00</p>
+            </div><a class="callback btn btn_yellow" href="#callback"><span>Заказать звонок</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner flex jcsb"> 
+            <div class="copyright">© 2021, ООО «СпецТехноАльянс»</div><a class="footer__link" href="#">Политика конфиденциальности</a>
+            <div class="developer">Разработка: AgentFox</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal mfp-hide" id="callback">
+      <div class="modal__header">Заказать звонок</div>
+      <form class="order-form flex jcsb">
+        <input type="hidden" name="act" value="callback">
+        <label class="order-form__label order-form__label-name">
+          <div class="order-form__label-text">Ваше имя</div>
+          <input class="order-form__input" type="text" name="name" placeholder="Имя">
+        </label>
+        <label class="order-form__label order-form__label-phone">
+          <div class="order-form__label-text">Ваш номер телефона</div>
+          <input class="order-form__input" type="text" name="phone" placeholder="+7 (___) ___-___-__" required>
+        </label>
+        <label class="order-form__label order-form__label-comment">
+          <div class="order-form__label-text">Комментарии к заявке</div>
+          <textarea class="order-form__textarea" name="comment" placeholder="Тут вы можете указать индивидуальные особенность вашего объекта или задать вопросы"></textarea>
+        </label>
+        <button class="order-form__button btn btn_yellow" type="submit"><span>Отправить заявку</span></button>
+        <label class="order-form__label order-form__label-privacy">
+          <input type="checkbox" required>Принимаю условия обработки моих данных в соответствии с <a href="#">политикой обработки данных</a>
+        </label>
+      </form>
+    </div>
+    <div class="modal modal_equipment mfp-hide" id="order_equipment">
+      <div class="modal__header">Заказ спецтехники</div>
+      <form class="order-form flex jcsb">
+        <input type="hidden" name="equipment">
+        <input type="hidden" name="act" value="equipment">
+        <label class="order-form__label order-form__label-name">
+          <div class="order-form__label-text">Ваше имя</div>
+          <input class="order-form__input" type="text" name="name" placeholder="Имя">
+        </label>
+        <label class="order-form__label order-form__label-phone">
+          <div class="order-form__label-text">Ваш номер телефона</div>
+          <input class="order-form__input" type="text" name="phone" placeholder="+7 (___) ___-___-__" required>
+        </label>
+        <label class="order-form__label order-form__label-address">
+          <div class="order-form__label-text">Укажите адрес объекта</div>
+          <input class="order-form__input" type="text" name="address" placeholder="Напишите здесь адрес объекта">
+        </label>
+        <label class="order-form__label order-form__label-date">
+          <div class="order-form__label-text">Дата</div>
+          <input class="order-form__input" type="text" name="date" placeholder="Укажите дату">
+        </label>
+        <label class="order-form__label order-form__label-time">
+          <div class="order-form__label-text">Время аренды</div>
+          <input class="order-form__input" type="text" name="time" placeholder="Укажите кол-во часов">
+        </label>
+        <label class="order-form__label order-form__label-comment">
+          <div class="order-form__label-text">Комментарии к заявке</div>
+          <textarea class="order-form__textarea" name="comment" placeholder="Тут вы можете указать индивидуальные особенность вашего объекта или задать вопросы"></textarea>
+        </label>
+        <button class="order-form__button btn btn_yellow" type="submit"><span>Отправить заявку</span></button>
+        <label class="order-form__label order-form__label-privacy">
+          <input type="checkbox" required>Принимаю условия обработки моих данных в соответствии с <a href="#">политикой обработки данных</a>
+        </label>
+      </form>
+    </div>
+    <div class="fas fa-arrow-up a-drop" id="top"></div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

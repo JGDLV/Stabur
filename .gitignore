@@ -1,0 +1,6 @@
+node_modules/
+app/send.php
+robots.txt
+WP/wp-config.php
+WP/wp-settings.php
+WP/BKP/

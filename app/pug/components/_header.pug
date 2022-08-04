@@ -1,0 +1,43 @@
+-
+  var clearPhone = function(x) {
+    return x.replace(/\D/g, '');
+  }
+
+  var header = {
+    logo: 'img/logo.png',
+    tagline: 'Буровые и свайные работы',
+    phone: '+7 (985) 760-04-21',
+    whours: 'с 09:00 до 18:00',
+    button: { href: '#callback', text: 'Заказать звонок' },
+    menu: [
+      { href: '/', text: 'Главная' },
+      { href: 'services.html', text: 'Услуги' },
+      { href: 'about.html', text: 'О компании' },
+      { href: 'projects.html', text: 'Проекты' },
+      { href: 'equipment.html', text: 'Техника' },
+      { href: 'contacts.html', text: 'Контакты' },
+    ]
+  }
+
+.container
+  .header__inner.flex
+    .logo
+      a.logo__link(href="/")
+        img.logo__image(src=header.logo, alt="")
+      p.tagline !{header.tagline}
+    .menu
+      ul.menu-items.flex
+        each item, index in header.menu
+          li.menu__item(class=index === 0 ? 'current-menu-item' : '')
+            a.menu__link(href=item.href) !{item.text}
+    .contacts
+      a.contacts__phone(href="tel:+" + clearPhone(header.phone)) !{header.phone}
+      p.contacts__whours !{header.whours}
+    a.callback.btn.btn_yellow(href=header.button.href) #[span !{header.button.text}]
+    .menu-toggle
+      i.icon-toggle
+        span
+        span
+        span
+if index
+  include intro.pug

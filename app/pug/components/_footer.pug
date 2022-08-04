@@ -1,0 +1,34 @@
+-
+  var footer = {
+    social: [
+      { href: 'https://www.instagram.com/spectechnoalliance/', class: 'fab fa-instagram' },
+      { href: 'https://api.whatsapp.com/send/?phone=+7910 5442749&text&app_absent=0', class: 'fab fa-whatsapp' },
+    ],
+    whours: 'Работаем без выходных <br>с 09:00 до 18:00'
+  }
+
+.footer__top
+  .container
+    .footer__top-inner.flex
+      .logo
+        a.logo__link(href="/")
+          img.logo__image(src=header.logo, alt="")
+        p.tagline !{header.tagline}
+      .menu
+        ul.menu-items.flex
+          each item, index in header.menu
+            li.menu__item(class=index === 0 ? 'current-menu-item' : '')
+              a.menu__link(href=item.href) !{item.text}
+      .social
+        each item in footer.social
+          a.social__item(href=item.href class=item.class)
+      .contacts
+        a.contacts__phone(href="tel:+" + clearPhone(header.phone)) !{header.phone}
+        p.contacts__whours !{footer.whours}
+      a.callback.btn.btn_yellow(href=header.button.href) #[span !{header.button.text}]
+.footer__bottom
+  .container
+    .footer__bottom-inner.flex.jcsb 
+      .copyright © 2021, ООО «СпецТехноАльянс»
+      a.footer__link(href="#") Политика конфиденциальности
+      .developer Разработка: AgentFox

@@ -1,0 +1,27 @@
+-
+  var question = {
+    header: 'Задать вопрос',
+  }
+
+.order#order
+  .container
+    .order__inner.flex
+      .order__left
+        h2.order__header !{question.header}
+        form.order-form.flex.jcsb
+          input(type="hidden", name="act" value="question")
+          label.order-form__label.order-form__label-name
+            .order-form__label-text Ваше имя
+            input.order-form__input(type="text" name="name" placeholder="Имя")
+          label.order-form__label.order-form__label-phone
+            .order-form__label-text Ваш номер телефона
+            input.order-form__input(type="text" name="phone" placeholder="+7 (___) ___-___-__" required)
+          label.order-form__label.order-form__label-comment
+            .order-form__label-text Ваше сообщение
+            textarea.order-form__textarea(name="comment" placeholder="Напишите любой вопрос и мы вам перезвоним")
+          button.order-form__button.btn.btn_yellow(type="submit") #[span Отправить сообщение]
+          label.order-form__label.order-form__label-privacy
+            input(type="checkbox" required)
+            | Принимаю условия обработки моих данных в соответствии с #[a(href="#") политикой обработки данных]
+      .order__right
+        .map

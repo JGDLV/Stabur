@@ -1,0 +1,182 @@
+-
+  var portfolio = {
+    header: 'Выполненные проекты <br>компании СпецТехноАльянс',
+    items: [
+      {
+        images: [
+          'img/portfolio-01.jpg',
+          'img/portfolio-01.jpg',
+          'img/portfolio-01.jpg',
+        ],
+        header: 'Комплекс инженернерных изысканий для ООО «ИПТ»',
+        text: {
+          header: 'Инженерно-геологические изыскания, экологические и геодезические изыскания',
+          props: [
+            { key: 'Адрес объекта', value: 'пос. Полотняный завод, Калужская обл.' },
+            { key: 'Площадь объекта', value: '25 га' },
+            { key: 'Срок исполнения', value: '50 дней' },
+          ]
+        },
+        button: { href: '#', text: 'Подробнее' }
+      },
+      {
+        images: [
+          'img/portfolio-02.jpg',
+          'img/portfolio-02.jpg',
+          'img/portfolio-02.jpg',
+        ],
+        header: 'Усиление фундаментов производственного корпуса АО «КЭМЗ»',
+        text: {
+          header: 'Усиление оснований фундаментов',
+          props: [
+            { key: 'Адрес объекта', value: 'г. Калуга, ул. Салтыкова-Щедрина д.121' },
+            { key: 'Срок исполнения', value: '30 дней' },
+          ]
+        },
+        button: { href: '#', text: 'Подробнее' }
+      },
+      {
+        images: [
+          'img/portfolio-03.jpg',
+          'img/portfolio-03.jpg',
+          'img/portfolio-03.jpg',
+        ],
+        header: 'Устройство буронабивных свай для ОАО «Галантус»',
+        text: {
+          header: 'Свайные работы',
+          props: [
+            { key: 'Адрес объекта', value: 'г. Калуга' },
+            { key: 'Срок исполнения', value: '7 дней' },
+          ]
+        },
+        button: { href: '#', text: 'Подробнее' }
+      },
+      {
+        images: [
+          'img/portfolio-04.jpg',
+          'img/portfolio-04.jpg',
+          'img/portfolio-04.jpg',
+        ],
+        header: 'Устройство буронабивных свай на фабрике «Nestle Purina»',
+        text: {
+          header: 'Свайные работы',
+          props: [
+            { key: 'Адрес объекта', value: 'с. Ворсино, Калужская обл.' },
+            { key: 'Срок исполнения', value: '20 дней' },
+          ]
+        },
+        button: { href: '#', text: 'Подробнее' }
+      },
+      {
+        images: [
+          'img/portfolio-05.jpg',
+          'img/portfolio-05.jpg',
+          'img/portfolio-05.jpg',
+        ],
+        header: 'Устройство буронабивных свай для ФГБУ «ЦППИ Планета»',
+        text: {
+          header: 'Свайные работы',
+          props: [
+            { key: 'Адрес объекта', value: 'г. Обнинск, ул. Королева 6а' },
+            { key: 'Срок исполнения', value: '10 дней' },
+          ]
+        },
+        button: { href: '#', text: 'Подробнее' }
+      },
+      {
+        images: [
+          'img/portfolio-06.jpg',
+          'img/portfolio-06.jpg',
+          'img/portfolio-06.jpg',
+        ],
+        header: 'Разведочное бурение склона на территории Государственного музея истории космонавтики имени К. Э. Циолковского',
+        text: {
+          header: 'Инженерно-геологические изыскания, экологические и геодезические изыскания',
+          props: [
+            { key: 'Адрес объекта', value: 'г. Калуга, ул. Академика королева 2' },
+            { key: 'Срок исполнения', value: '10 дней' },
+          ]
+        },
+        button: { href: '#', text: 'Подробнее' }
+      },
+      {
+        images: [
+          'img/portfolio-07.jpg',
+          'img/portfolio-07.jpg',
+          'img/portfolio-07.jpg',
+        ],
+        header: 'Вдавливание свай 30х30 с лидерным бурением',
+        text: {
+          header: 'Свайные работы',
+          props: [
+            { key: 'Адрес объекта', value: 'г. Калуга, ул. Вишневского' },
+            { key: 'Срок исполнения', value: '20 дней' },
+          ]
+        },
+        button: { href: '#', text: 'Подробнее' }
+      },
+      {
+        images: [
+          'img/portfolio-08.jpg',
+          'img/portfolio-08.jpg',
+          'img/portfolio-08.jpg',
+        ],
+        header: 'Инженерно-геологические изыскания в Калуге',
+        text: {
+          header: 'Инженерно-геологические изыскания, экологические и геодезические изыскания',
+          props: [
+            { key: 'Адрес объекта', value: 'г. Калуга, ул Парковая, 12в' },
+            { key: 'Площадь объекта', value: '5 га' },
+            { key: 'Срок исполнения', value: '10 дней' },
+          ]
+        },
+        button: { href: '#', text: 'Подробнее' }
+      },
+    ],
+    button: { href: '#', text: 'Смотреть ещё проекты →' },
+    inner: {
+      header: 'Буровые и земляные работы СпецТехноАльянс'
+    }
+  }
+
+.portfolio#portfolio
+  .container
+    if index
+      h2.portfolio__header !{portfolio.header}
+      .portfolio-items.flex
+        each item, index in portfolio.items
+          if index < 6
+            .portfolio__item
+              .portfolio__item-image-part
+                img.portfolio__item-image(src=item.images[0], alt='')
+                .portfolio__item-hidden
+                  .portfolio__item-hidden-inner
+                    h3.portfolio__item-hidden-header !{item.text.header}
+                    ul
+                      each prop in item.text.props
+                        li #[strong !{prop.key}:] !{prop.value}
+                  a.portfolio__item-button.btn.btn_white(href=item.button.href) #[span !{item.button.text}]
+              a.portfolio__item-text-part(href=item.button.href)  !{item.header}
+        a.portfolio__button.btn.btn_grey(href=portfolio.button.href) #[span !{portfolio.button.text}]
+    else
+      h2.portfolio__header !{portfolio.inner.header}
+      .portfolio-items
+        each item in portfolio.items
+          .portfolio__item
+            .portfolio__item-inner
+              .portfolio__item-image-part.swiper-container
+                .swiper-wrapper
+                  if item.images
+                    each image in item.images
+                      a.portfolio__item-link.swiper-slide(href=image)
+                        img.portfolio__item-image(src=image, alt='')
+                .portfolio-buttons
+                  .swiper-button-prev.portfolio-button-prev
+                  .swiper-button-next.portfolio-button-next
+                .swiper-pagination.portfolio-pagination
+              .portfolio__item-text-part
+                .portfolio__item-header !{item.header}
+                .portfolio__item-text !{item.text.header}
+                .portfolio__item-props
+                  each prop in item.text.props
+                    .portfolio__item-hidden-prop #[span !{prop.key}:] !{prop.value}

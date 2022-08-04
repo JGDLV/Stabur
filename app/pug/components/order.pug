@@ -1,0 +1,45 @@
+-
+  var order = {
+    header: 'Заявка на услуги',
+    image: 'img/order-image.jpg'
+  }
+
+.order#order
+  .container
+    .order__inner.flex
+      .order__left
+        h2.order__header !{order.header}
+        form.order-form.flex.jcsb
+          input(type="hidden", name="act" value="order")
+          label.order-form__label.order-form__label-service
+            .order-form__label-text Выберите услугу, которая вас интересует
+            .order-form__dropdown.dropdown
+              input(type="hidden", name="service" value="")
+              .order-form__dropdown-current -
+              ul
+                each item in services.items
+                  li !{item.header}
+          label.order-form__label.order-form__label-address
+            .order-form__label-text Укажите адрес объекта
+            input.order-form__input(type="text" name="address" placeholder="Напишите здесь адрес объекта")
+          label.order-form__label.order-form__label-name
+            .order-form__label-text Ваше имя
+            input.order-form__input(type="text" name="name" placeholder="Имя")
+          label.order-form__label.order-form__label-phone
+            .order-form__label-text Ваш номер телефона
+            input.order-form__input(type="text" name="phone" placeholder="+7 (___) ___-___-__" required)
+          label.order-form__label.order-form__label-comment
+            .order-form__label-text Комментарии к заявке
+            textarea.order-form__textarea(name="comment" placeholder="Тут вы можете указать индивидуальные особенность вашего объекта или задать вопросы")
+          .order-form__file-wrap.flex.jcsb
+            label.order-form__label.order-form__label-file(data-name="Прикрепите проект постройки")
+              input.order-form__input.order-form__input-file(type="file", name="file")
+              .name
+            .delete
+            .order-form__file-text Размер файла — не более 5 мб (doc, pdf, jpg, png, bmp)
+          button.order-form__button.btn.btn_yellow(type="submit") #[span Отправить заявку]
+          label.order-form__label.order-form__label-privacy
+            input(type="checkbox" required)
+            | Принимаю условия обработки моих данных в соответствии с #[a(href="#") политикой обработки данных]
+      .order__right
+        img.order__image(src=order.image, alt="")

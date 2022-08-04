@@ -1,0 +1,23 @@
+-
+  var intro = {
+    header: 'Работы нулевого <br>цикла строительства',
+    list: [
+      'Буровые работы',
+      'Свайные работы',
+      'Ограждение котлованов',
+      'Инженерно-геологические изыскания',
+    ],
+    button: { href: '#callback', text: 'Оставить заявку' },
+    video: ''
+  }
+
+.intro#intro
+  .container
+    h1.intro__header !{intro.header}
+    ul.intro__list
+      each item in intro.list
+        li.intro__list-item !{item}
+    a.intro__button.btn.btn_yellow(href=intro.button.href) #[span !{intro.button.text}]
+    .intro__video
+      .intro__video-inner.paused
+        video(src="video.mp4" poster="img/poster2.jpg")

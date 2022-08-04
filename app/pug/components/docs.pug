@@ -1,0 +1,29 @@
+-
+  var docs = {
+    header: 'Мы имеем необходимые допуски СРО <br>на все виды выполняемых работ',
+    items: [
+      { image: 'img/docs-01.jpg', header: 'Сертификат <br>соответствия', },
+      { image: 'img/docs-02.jpg', header: 'Выписка <br>из реестра', },
+      { image: 'img/docs-03.jpg', header: 'Выписка <br>из реестра', },
+    ],
+    button: { href: '#', text: 'Узнать больше о компании →' }
+  }
+
+.docs#docs
+  .container
+    .docs__inner.flex
+      .docs__left
+        h2.docs__header !{docs.header}
+        if index
+          a.docs__button.btn.btn_blue(href=docs.button.href) #[span !{docs.button.text}]
+      .docs__right
+        .swiper-container
+          .docs-items.swiper-wrapper
+            each item in docs.items
+              .docs__item.swiper-slide
+                a.docs__item-image-part(href=item.image) 
+                  img.docs__item-image(src=item.image, alt='')
+                .docs__item-text-part !{item.header}
+        .docs-buttons
+          .swiper-button-prev.docs-button-prev
+          .swiper-button-next.docs-button-next

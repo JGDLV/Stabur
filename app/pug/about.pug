@@ -1,0 +1,12 @@
+extends _layout.pug
+
+block variables
+  -
+    var title = 'О компании'
+    var description = 'О компании'
+    var index = false
+
+block content
+  include components/about.pug
+  include components/docs.pug
+  include components/benefits.pug

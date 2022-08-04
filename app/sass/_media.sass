@@ -1,0 +1,557 @@
+@media (min-width: 576px)
+  .container,
+  .header .container,
+  .footer .container
+    max-width: 540px
+
+@media (min-width: 768px)
+  .container,
+  .header .container,
+  .footer .container
+    max-width: 720px
+
+@media (min-width: 992px)
+  .container,
+  .header .container,
+  .footer .container
+    max-width: 960px
+
+@media (min-width: 1200px)
+  .container,
+  .header .container,
+  .footer .container
+    max-width: 980px
+
+@media (min-width: 1480px)
+  .header .container,
+  .footer .container
+    max-width: 1438px
+
+@media (max-width: 1800px)
+  .equipment__item-prices
+    width: 100%
+    margin-bottom: 20px
+  .equipment__item-button
+    margin-left: 0
+  .inner
+    .equipment__item-prices
+      width: auto
+      margin-bottom: 0
+    .equipment__item-button
+      margin-left: auto
+
+@media (max-width: 1600px)
+  .equipment__item-image-part
+    max-width: 250px
+  .equipment__item-text-part
+    width: calc(100% - 250px)
+  .inner
+    .equipment__item-image-part
+      max-width: 350px
+    .equipment__item-text-part
+      width: calc(100% - 350px)
+      padding-top: 0
+
+// @media (max-width: 1550px)
+
+@media (max-width: 1480px)
+  .intro__list
+    max-width: 400px
+    &-item
+      z-index: 20
+  .intro__video
+    width: 672px
+    height: auto
+    right: -90px
+    top: 0
+    bottom: 0
+  .about__left
+    width: 500px
+    height: auto
+    background-size: contain
+    left: -100px
+  .order__right
+    width: 500px
+    right: -100px
+  .header
+    &__inner
+      justify-content: space-between
+      align-items: center
+      & > *
+        margin: 0
+    .menu
+      order: 10
+      width: 100%
+      margin-top: 30px !important
+      & > ul
+        justify-content: center
+        & > li
+          flex-grow: 1
+          text-align: center
+  .footer
+    &__top
+      padding: 30px 0
+      &-inner
+        align-items: center
+        justify-content: space-between
+        & > *
+          margin: 0 10px !important
+    .menu
+      width: 100%
+      margin: 40px 0 20px !important
+      order: 10
+      & > ul
+        & > li
+          flex-grow: 1
+          text-align: center
+  .service-intro__image-part
+    position: relative
+    right: auto
+    max-width: calc(100% - 520px)
+  .map
+    width: 100%
+  .inner .order
+    padding-bottom: 140px
+  .equipment__item-image-part
+    width: 100%
+    max-width: 100%
+  .equipment__item-text-part
+    width: 100%
+    padding: 10px 0 0 0
+
+@media (max-width: 1240px)
+  .services__item
+    padding: 0 15px
+    box-sizing: border-box
+
+@media (max-width: 1200px)
+  .intro
+    padding: 40px 0 60px
+    &__video
+      position: relative
+      top: auto
+      right: auto
+      bottom: auto
+    &__button
+      margin-bottom: 80px
+  .services
+    padding: 40px 0
+  .equipment
+    padding: 40px 0 !important
+    &__item
+      &-image
+        &-part
+          max-width: 350px
+      &-text
+        &-part
+          width: calc(100% - 350px)
+          padding: 0 0 0 20px
+      &-prices
+        width: auto
+      &-button
+        margin-left: auto
+    &-button
+      &-prev
+        left: 20px
+      &-next
+        right: 20px
+  .about
+    padding: 40px 0 !important
+    &__left
+      position: static
+      margin: 0 auto 40px
+    &__right
+      width: 100%
+    &-items
+      margin: 0
+  .docs
+    padding: 40px 0
+  .portfolio
+    padding: 40px 0
+    &-items
+      margin: 0 0 -20px
+  .order
+    padding: 40px 0 !important
+    &__left
+      width: 100% !important
+      margin-bottom: 0 !important
+    &__right
+      display: none !important
+    &-form
+      justify-content: flex-start
+    .order-form__label-name
+      margin-right: 20px
+    .order-form__file-wrap
+      justify-content: flex-start
+    .order-form__label-file
+      margin-right: 20px
+  .footer
+    .contacts
+      display: none
+  .benefits
+    padding: 40px 0
+  .requisites
+    padding: 40px 0
+  .inner
+    .order__inner
+      justify-content: space-between
+    .order__right
+      display: block
+      position: relative
+      width: calc(50% - 20px)
+      right: auto
+      top: auto
+    .order__left
+      width: calc(50% - 20px)
+    &-content
+      padding: 40px 0
+  .service-intro
+    padding: 40px 0
+  .service-types
+    padding: 40px 0
+    &__item
+      &-text
+        &-part
+          max-width: 450px
+  .service-scheme
+    padding: 40px 0
+  .service
+    & + .order
+      .order__left
+        width: 100%
+      .order__right
+        display: none
+  .service-equipment
+    padding: 40px 0
+
+@media (max-width: 992px)
+  h1, h2, .about__text_2
+    font-size: 40px !important
+    line-height: normal !important
+    br
+      display: none
+  .service-scheme__text
+    br
+      display: none
+  .intro__button
+    font-size: 30px
+    width: 240px
+    height: 50px
+  .equipment__item-image
+    height: auto
+    max-height: 350px
+  .equipment__item-image-part
+    width: 100%
+    max-width: none
+  .equipment__item-text-part
+    max-width: none
+    padding: 0 0 15px
+    width: 100%
+  .docs__left
+    width: 100%
+    margin-bottom: 30px
+    padding: 0
+    br
+      display: none
+  .inner .docs__header
+    margin-top: 0
+  .docs__right
+    width: 100%
+  .docs-items
+    justify-content: center
+  .docs__item
+    margin: 0
+    &-image-part
+      margin-left: auto
+      margin-right: auto
+  .footer
+    .menu
+      & > ul
+        justify-content: center
+        & > li
+          padding: 10px 0
+  .header
+    .menu
+      & > ul
+        justify-content: center
+  .inner
+    .equipment__item-image-part
+      width: 100%
+      max-width: 100%
+    .equipment__item-text-part
+      padding: 30px 0 0
+      max-width: 100% !important
+      width: 100% !important
+      margin: 0 !important
+    .equipment__item-button
+      margin: 0 0 0 30px
+    .portfolio__item-inner
+      padding: 30px
+    .portfolio__item-image-part
+      left: auto !important
+      right: auto !important
+      position: relative
+      margin: 0 auto 30px
+      max-width: 100%
+    .portfolio__item-text-part
+      max-width: 100%
+    .services-items
+      margin-bottom: 0
+    .services__item
+      margin-bottom: 30px
+      &-image-part
+        position: static
+        display: none
+      &-text-part
+        max-width: 100%
+  .service-intro__image-part
+    display: none
+  .service-types__item
+    margin-bottom: 30px
+  .service-types__item-inner
+    padding: 30px
+  .service-types__item-image-part
+    position: static
+    margin-bottom: 15px
+    max-width: 100%
+  .service-types__item-text-part
+    max-width: 100%
+  .service-types__header
+    margin-bottom: 30px
+  .service-scheme-items
+    padding: 0
+  .service-types-items
+    margin-top: 0
+  .service-portfolio__text
+    margin-bottom: 30px
+
+@media (max-width: 768px)
+  .intro__video
+    width: 100%
+    height: auto
+  .services__header
+    margin-bottom: 40px
+  .services-buttons
+    top: 28px
+  .services-button-prev, .services-button-next
+    width: 40px
+    height: 40px
+    &::after
+      font-size: 15px
+  .equipment__item-prices
+    width: 100% !important
+    margin-bottom: 30px !important
+  .equipment__item-button
+    margin: 0 !important
+  .equipment-pagination
+    margin-top: 40px
+  .portfolio__item
+    width: 100%
+  .portfolio__item-hidden-header
+    font-size: 18px
+  .portfolio__item-hidden-prop
+    font-size: 16px
+    line-height: 20px
+  .portfolio__button
+    height: 50px
+    font-size: 24px
+  .footer
+    .logo img
+      width: 170px
+    &__bottom
+      text-align: center
+      line-height: normal
+      padding: 10px 0
+      &-inner
+        justify-content: center
+        & > *
+          margin: 5px 10px
+    .menu
+      & > ul
+        & > li
+          flex-grow: 0
+  .copyright
+    width: 100%
+  .header
+    padding: 0 0 15px !important
+    & > .container
+      max-width: 100%
+    &__inner
+      // height: 50px
+    .contacts
+      margin: 0 -1px 0 auto
+      border: 1px solid rgba(255, 255, 255, 0.25)
+      border-right: 0
+      // border: 0
+      order: 2
+      &__phone
+        font-size: 0
+        width: 50px
+        height: 43px
+        display: block
+        background: url('../img/sprite.svg#phone') no-repeat center
+        background-size: 20px
+      &__whours
+        display: none
+    .callback
+      order: 1
+      margin: auto
+    .menu
+      margin: 0 !important
+      & > ul
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        z-index: 30
+        background: #000
+        padding: 10px
+        & > li
+          width: 100%
+          margin: 5px 0
+      &-toggle
+        display: flex
+        margin: 0
+        z-index: 40
+        position: relative
+        order: 3
+    .logo
+      margin-top: 15px
+      order: 0
+      img
+        width: 140px
+  .inner
+    .portfolio-items
+      margin-bottom: -30px
+    .portfolio__item
+      margin-bottom: 30px
+      &-image-part
+        height: auto
+      &-header
+        font-size: 28px
+        line-height: normal
+    .order__left,
+    .order__right
+      width: 100%
+    .order__left
+      margin-bottom: 30px
+  .requisites__left
+    margin-bottom: 20px
+    width: 100%
+
+@media (max-width: 576px)
+  h1, h2, .about__text_2
+    font-size: 30px !important
+  .subheader
+    font-size: 24px !important
+    line-height: normal !important
+  .intro
+    padding-bottom: 40px
+    &__list-item
+      font-size: 24px
+      line-height: 1.5
+    &__video
+      display: none
+    &__button
+      margin-bottom: 0
+  .about__item
+    width: 100%
+    margin: 15px 0
+  .requisites
+    font-size: 20px
+    line-height: normal
+    &__text
+      font-size: 20px
+      line-height: normal
+  .docs
+    &-items
+      justify-content: flex-start
+    &-buttons
+      display: block
+    &__item-image-part
+      margin-left: auto
+      margin-right: auto
+    &-button-prev,
+    &-button-next
+      top: auto
+      bottom: 20%
+    &-button-prev
+      left: 15px
+    &-button-next
+      right: 15px
+  .equipment__item
+    padding: 0 20px
+  .equipment-button-prev,
+  .equipment-button-next
+    top: 20px
+  .equipment-button-prev
+    left: 40px
+  .equipment-button-next
+    right: 40px
+
+@media (max-width: 520px)
+  .equipment__item
+    // padding: 0
+  .equipment-button-prev, .equipment-button-next
+    // top: 20px
+    // transform: none
+  // .equipment-button-prev
+  //   left: 20px
+  // .equipment-button-next
+  //   right: 20px
+  .docs__item
+    width: 100%
+    text-align: center
+    margin: 15px 0
+    &-image-part
+      margin: auto
+  .order-form__file-text
+    width: 100%
+    margin: -20px 0 20px
+  .footer__top-inner
+    justify-content: center
+  .footer
+    .logo
+      width: 100%
+      text-align: center
+      margin-bottom: 30px !important
+    .tagline
+      text-align: center
+    .menu
+      margin-bottom: 0 !important
+  .header
+    &__inner
+      justify-content: center
+      & > *
+        margin: 0 15px
+    .callback
+      // width: 60%
+      margin: 20px auto 0
+      display: none
+  .benefits__item
+    width: 100%
+
+@media (max-width: 400px)
+  .header
+    .callback
+      width: 80%
+    .logo
+      margin-bottom: 10px
+      img
+        width: 120px
+  .equipment__item-inner
+    padding: 20px 20px 40px
+  .inner
+    .portfolio__item-inner
+      padding: 15px
+  .tagline
+    font-size: 14px
+  .equipment-pagination .swiper-pagination-bullet
+    width: 20px
+  .modal
+    padding: 30px
+  .service-scheme__item h3
+    font-size: 25px
+  .service-types__item h3
+    font-size: 25px

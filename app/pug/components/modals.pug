@@ -1,0 +1,50 @@
+.modal.mfp-hide#callback
+  .modal__header Заказать звонок
+  form.order-form.flex.jcsb
+    input(type="hidden", name="act" value="callback")
+    label.order-form__label.order-form__label-name
+      .order-form__label-text Ваше имя
+      input.order-form__input(type="text" name="name" placeholder="Имя")
+    label.order-form__label.order-form__label-phone
+      .order-form__label-text Ваш номер телефона
+      input.order-form__input(type="text" name="phone" placeholder="+7 (___) ___-___-__" required)
+    label.order-form__label.order-form__label-comment
+      .order-form__label-text Комментарии к заявке
+      textarea.order-form__textarea(name="comment" placeholder="Тут вы можете указать индивидуальные особенность вашего объекта или задать вопросы")
+    button.order-form__button.btn.btn_yellow(type="submit") #[span Отправить заявку]
+    label.order-form__label.order-form__label-privacy
+      input(type="checkbox" required)
+      | Принимаю условия обработки моих данных в соответствии с #[a(href="#") политикой обработки данных]
+
+.modal.modal_equipment.mfp-hide#order_equipment
+  .modal__header Заказ спецтехники
+  form.order-form.flex.jcsb
+    input(type="hidden", name="equipment")
+    input(type="hidden", name="act" value="equipment")
+    label.order-form__label.order-form__label-name
+      .order-form__label-text Ваше имя
+      input.order-form__input(type="text" name="name" placeholder="Имя")
+    label.order-form__label.order-form__label-phone
+      .order-form__label-text Ваш номер телефона
+      input.order-form__input(type="text" name="phone" placeholder="+7 (___) ___-___-__" required)
+    label.order-form__label.order-form__label-address
+      .order-form__label-text Укажите адрес объекта
+      input.order-form__input(type="text" name="address" placeholder="Напишите здесь адрес объекта")
+    label.order-form__label.order-form__label-date
+      .order-form__label-text Дата
+      input.order-form__input(type="text" name="date" placeholder="Укажите дату")
+    label.order-form__label.order-form__label-time
+      .order-form__label-text Время аренды
+      input.order-form__input(type="text" name="time" placeholder="Укажите кол-во часов")
+    label.order-form__label.order-form__label-comment
+      .order-form__label-text Комментарии к заявке
+      textarea.order-form__textarea(name="comment" placeholder="Тут вы можете указать индивидуальные особенность вашего объекта или задать вопросы")
+    button.order-form__button.btn.btn_yellow(type="submit") #[span Отправить заявку]
+    label.order-form__label.order-form__label-privacy
+      input(type="checkbox" required)
+      | Принимаю условия обработки моих данных в соответствии с #[a(href="#") политикой обработки данных]
+
+//- .modal.modal_thanks.mfp-hide
+//-   .modal__header Спасибо!
+//-   .modal__text Наш менеджер свяжется с Вами в ближайшее время
+//-   .modal__close.btn.btn_yellow #[span Хорошо]
